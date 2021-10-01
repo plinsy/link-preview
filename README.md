@@ -96,7 +96,11 @@ Install above dependencies via *npm*.
 
 Now install `@angular-material-extensions/link-preview` via:
 ```shell
-npm install --save plinsy/@angular-material-extensions/link-preview
+npm install --save plinsy/link-preview
+```
+Or via yarn
+```
+yarn add --dev plinsy/link-preview
 ```
 
 ---
