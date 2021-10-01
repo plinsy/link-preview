@@ -1,15 +1,12 @@
 {
-  "name": "@angular-material-extensions/link-preview",
+  "name": "@plinsy/link-preview",
   "description": "Angular open source UI library to preview web links",
   "version": "1.1.1",
-  "homepage": "https://github.com/angular-material-extensions/link-preview",
-  "author": {
-    "name": "Anthony Nahas",
-    "url": "https://github.com/angular-material-extensions"
-  },
+  "homepage": "https://github.com/plinsy/link-preview",
+  "author": "A.N. Tsimanarson Princy (https://github.com/plinsy)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/angular-material-extensions/link-preview.git"
+    "url": "git://github.com/plinsy/link-preview.git"
   },
   "license": "MIT",
   "keywords": [
@@ -22,9 +19,12 @@
     "render web links"
   ],
   "bugs": {
-    "url": "https://github.com/angular-material-extensions/link-preview/issues"
+    "url": "https://github.com/plinsy/link-preview/issues"
   },
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "gulp build",
     "test": " gulp test",
@@ -32,25 +32,25 @@
     "test:ci": "jest --runInBand",
     "test:coverage": "jest --coverage",
     "demo": " gulp build:demo",
-    "check-travis": " travis-status --repo=angular-material-extensions/link-preview --branch=master --fail-pending || echo 'Not yet passing'"
+    "check-travis": " travis-status --repo=plinsy/link-preview --branch=master --fail-pending || echo 'Not yet passing'"
   },
   "dependencies": {
-    "@angular/animations": "^7.2.15",
-    "@angular/cdk": "^7.2.0",
-    "@angular/common": "^7.2.15",
-    "@angular/core": "^7.2.15",
-    "@angular/http": "^7.2.15",
-    "@angular/material": "^7.2.0",
-    "@angular/platform-browser": "^7.2.15",
+    "@angular/animations": "^12.2.6",
+    "@angular/cdk": "^12.2.0",
+    "@angular/common": "^12.2.6",
+    "@angular/core": "^12.2.6",
+    "@angular/http": "^12.2.6",
+    "@angular/material": "^12.2.0",
+    "@angular/platform-browser": "^12.2.6",
     "ngx-linkifyjs": "^1.2.2"
   },
   "devDependencies": {
-    "@angular/compiler": "^7.2.15",
-    "@angular/compiler-cli": "^7.2.15",
+    "@angular/compiler": "^12.2.6",
+    "@angular/compiler-cli": "^12.2.6",
     "@angular/flex-layout": "^7.0.0-beta.21",
-    "@angular/forms": "^7.2.15",
-    "@angular/platform-browser-dynamic": "^7.2.15",
-    "@angular/platform-server": "^7.2.15",
+    "@angular/forms": "^12.2.6",
+    "@angular/platform-browser-dynamic": "^12.2.6",
+    "@angular/platform-server": "^12.2.6",
     "@compodoc/gulp-compodoc": "^0.0.10",
     "@types/jest": "^23.3.11",
     "@types/lodash": "^4.14.134",
@@ -165,5 +165,6 @@
       "demo"
     ],
     "scope": "\\S+.*"
-  }
+  },
+  "main": "commitlint.config.js"
 }
